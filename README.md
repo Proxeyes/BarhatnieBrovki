@@ -24,6 +24,6 @@
 
 ## Авторы
 
-* **Виталий Чистяков** - *Начальная работа* - [BarhatnieBrovki](https://github.com/Proxeyes/BarhatnieBrovki.git)
+* **Богдан Митрофанов** - *Начальная работа* - [BarhatnieBrovki](https://github.com/Proxeyes/BarhatnieBrovki.git)
 
 Смотрите также список [участников](https://github.com/Proxeyes), участвовавших в этом проекте.
