@@ -1,0 +1,43 @@
+﻿<Window x:Class="Barhatnie_Brovki.Redact"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Barhatnie_Brovki"
+        mc:Ignorable="d"
+        Title="Редактирование" Height="450" Width="800">
+    <Grid Background="#e1e4ff" Margin="0,0,0,-84">
+        <StackPanel Orientation="Vertical" Width="400" Background="#e1e4ff">
+
+            <Label  Content="Редактирование услуги" HorizontalAlignment="Center" FontSize="17" FontWeight="DemiBold" FontFamily="Tahoma" />
+            <Label Content="Название" />
+            <Border BorderThickness="1" BorderBrush="Black" Height="39" Margin="10">
+
+                <TextBox x:Name="TitleText" Uid="{Binding ID}" />
+            </Border>
+            <Label Content="Цена" />
+            <Border BorderThickness="1" BorderBrush="Black" Height="39" Margin="10">
+
+                <TextBox x:Name="CostTetxt"/>
+            </Border>
+            <Label Content="Время" />
+            <Border BorderThickness="1" BorderBrush="Black" Height="39" Margin="10">
+
+                <TextBox x:Name="DurText"/>
+            </Border>
+
+
+            <Label Content="Картинка" />
+            <Border BorderThickness="1" BorderBrush="Black" Height="39" Margin="10">
+
+                <TextBox x:Name="ImgText"/>
+            </Border>
+
+            <Button Background="#ff4a6d" Height="50" Width="Auto" FontSize="19" FontFamily="Tahoma" Click="Button_Click" Margin="10" >Сохранить</Button>
+
+            <Button Background="White"  Height="50" Width="Auto" FontSize="19" FontFamily="Tahoma"  Margin="10">Назад</Button>
+
+
+        </StackPanel>
+    </Grid>
+</Window>

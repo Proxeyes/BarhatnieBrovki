@@ -1,0 +1,48 @@
+﻿<Window x:Class="Barhatnie_Brovki.AddUslugi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Barhatnie_Brovki"
+        mc:Ignorable="d"
+        Title="Добавить услугу" Height="450" Width="800">
+    <Grid Background="#e1e4ff">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="101*"/>
+            <ColumnDefinition Width="99*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="#e1e4ff" Orientation="Vertical" Width="400" Margin="200,10,200,25" Grid.ColumnSpan="2">
+            <Label HorizontalAlignment="Center" FontSize="15" Content="Добавление услуги"></Label>
+            <Label Content="Название" ></Label>
+            <Border BorderThickness="1" BorderBrush="Black" Margin="3">
+                <TextBox x:Name="TitleText"/>
+            </Border>
+            <Label Content="Цена" ></Label> 
+                
+            <Border BorderThickness="1" BorderBrush="Black" Margin="3">
+                <TextBox x:Name="Cost" Height="18"/>
+            </Border>
+            <Label Content="Длительность процедуры в секундах" ></Label>
+            <Border BorderThickness="1" BorderBrush="Black" >
+                <TextBox x:Name="DurText"/>
+            </Border>
+            <Label Content="Описание"  ></Label>
+
+            <Border BorderThickness="1" BorderBrush="Black" >
+                <TextBox x:Name="DescText" Height="18"/>
+            </Border>
+            <Label Content="Скидка" ></Label>
+
+            <Border BorderThickness="1" BorderBrush="Black" >
+                <TextBox x:Name="discountText" Height="18"/>
+            </Border>
+            <Label Content="Картинка" ></Label>
+
+            <Border BorderThickness="1" BorderBrush="Black" >
+                <TextBox x:Name="ImgText" Height="18"/>
+            </Border>
+            <Button Height="24" Width="76" FontSize="13" Background="LightGray" Click="Button_Click" Margin="10" >Добавить</Button>
+            <Button Height="25" Width="68" FontSize="10" Background="White" Click="Button_Click_1"  Content="Назад" />
+        </StackPanel>
+    </Grid>
+</Window>
